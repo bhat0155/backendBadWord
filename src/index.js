@@ -20,6 +20,10 @@ app.post("/bad", (req, res) => {
 
     return res.send(newText);
   }
+},{
+  cors:{
+    origin: "*" 
+  }
 });
 
 app.listen(8000, () => {
